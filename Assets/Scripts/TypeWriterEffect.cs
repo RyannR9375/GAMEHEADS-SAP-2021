@@ -1,0 +1,45 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class TypeWriterEffect : MonoBehaviour
+{
+
+    [SerializeField] private float typewriterSpeed = 50f;
+
+    public void Run(string textToType, TMP_Text textLabel)
+    {
+        StartCoroutine(routine: TypeText(textToType, textLabel));
+    }
+
+    private IEnumerator TypeText(string textToType, TMP_Text textLabel)
+    {
+        textLabel.text = string.Empty; //Starts the textbox blank
+
+        yield return new WaitForSeconds(1); // waits Seconds before typing anything
+
+        float t = 0;
+        int charIndex = 0;
+
+        while (charIndex < textToType.Length)
+        {
+            t += Time.deltaTime * typewriterSpeed;
+            charIndex = Mathf.FloorToInt(t);
+            charIndex = Mathf.Clamp(charIndex, 0, textToType.Length);
+
+            textLabel.text = textToType.Substring(0, charIndex);
+
+            yield return null;
+
+        }
+
+        textLabel.text = textToType;
+
+    }
+
+
+}
+
+
+
