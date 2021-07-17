@@ -5,8 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private DialogUI dialogUI;
+
     public int maxHealth = 8;
     public int currentHealth;
+    public DialogUI DialogUI => dialogUI;
+
+    public IInteractable Interactable { get; set; }
 
     public HealthBar healthBar;
 
@@ -32,7 +37,17 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (dialogUI.IsOpen) return;
+
         rb.velocity = new Vector2(playerDirection.x * playerSpeed, playerDirection.y * playerSpeed);
+
+        if (Input.GetKeyDown(KeyCode.E)) // INTERACTABLE
+        {
+            if(Interactable != null)
+            {
+                Interactable.Interact(this);
+            }
+        }
     }
 
     //PLAYER HIT
