@@ -17,14 +17,9 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
-    - UnityEditor.Tilemaps.GridPaintPaletteClipboard
-    - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
-    - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -45,9 +40,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.Slider
+    - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
     Assets/Scenes/DEMO.unity:
     - Class: 1
@@ -105,11 +100,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12942}
     - Class: 114
+      Script: {instanceID: 13164}
+    - Class: 114
       Script: {instanceID: 13282}
     - Class: 114
       Script: {instanceID: 13324}
-    - Class: 114
-      Script: {instanceID: 13368}
     - Class: 114
       Script: {instanceID: 13372}
     - Class: 114
@@ -718,5 +713,5 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/DEMO.unity
-  playerPath: C:/Users/yerho/Documents/GAMEHEADS SAP/BUILDS/WEEK 7_17/GAMEHEADS SAP
+  playerPath: C:/Users/yerho/Documents/GAMEHEADS SAP/BUILDS/WEEK 7_28/GAMEHEADS SAP
     DEMO BUILD.exe

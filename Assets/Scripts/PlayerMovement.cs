@@ -50,10 +50,19 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    //PLAYER HIT
+    //PLAYER HIT HEALTH 
     public void PlayerHit(int _damage)
     {
         currentHealth -= _damage;
+        Debug.Log("HP: " + currentHealth);
+        healthBar.SetHealth(currentHealth);
+        //playerAnim.SetTrigger("Damage");
+
+        if (currentHealth <= 0)
+        {
+            //playerAnim.SetTrigger("Die");
+            //GameOver();
+        }
     }
 
     //COLLISION CHECK

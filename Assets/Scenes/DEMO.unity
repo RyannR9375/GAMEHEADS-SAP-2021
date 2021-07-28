@@ -252,7 +252,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0a0d922535d20794fa860b8bff79f931, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -362,7 +362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &373853092
 RectTransform:
   m_ObjectHideFlags: 0
@@ -380,7 +380,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 10, y: 0}
-  m_SizeDelta: {x: 1920, y: 75}
+  m_SizeDelta: {x: 950, y: 200}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &373853093
 MonoBehaviour:
@@ -464,7 +464,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 5.3445854}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -555,8 +555,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 200}
+  m_SizeDelta: {x: -0.000008285046, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &479278826
 MonoBehaviour:
@@ -567,7 +567,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 479278824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
@@ -575,7 +575,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 4
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
@@ -819,7 +819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.23999906, z: -5}
+  m_LocalPosition: {x: 0, y: 0.44, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1170829751}
@@ -10925,7 +10925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc18486a9f8de042bb5d4d38c6c5dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogObject: {fileID: 11400000, guid: 499bab7e3d5cb6e408257906f92156f3, type: 2}
+  dialogObject: {fileID: 11400000, guid: 7678a32f76d53b747aa16973848be896, type: 2}
 --- !u!58 &1050051387
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10980,7 +10980,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0a0d922535d20794fa860b8bff79f931, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11018,16 +11018,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20f46bb5e091d8449b35cbd1f51407e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogObject: {fileID: 11400000, guid: 499bab7e3d5cb6e408257906f92156f3, type: 2}
+  dialogObject: {fileID: 11400000, guid: 7678a32f76d53b747aa16973848be896, type: 2}
   events:
-  - name: Na na, nope. That is definitely my wallet. (PASSIVE AGRESSIVE)
+  - name: 'A) LAQUAN: Uhhhh....Hey man??? I don''t want any trouble but ummm...I
+      think you have my wallet and it would be nice you gave it ba... (Diplomatic
+      Choice) -5 PTs'
     onPickedResponse:
       m_PersistentCalls:
-        m_Calls: []
-  - name: Uhh... Sure... I think that ma ma mine... (GETS FORCED INTO GAME)
+        m_Calls:
+        - m_Target: {fileID: 1170829749}
+          m_MethodName: PlayerHit
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 20
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: 'B) LAQUAN: How about you just give me my wallet?(Confrontion Choice) -5
+      PTs'
     onPickedResponse:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1170829749}
+          m_MethodName: PlayerHit
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 20
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: 'C) LAQUAN: Erm...I notice that you have on my dead father''s wallet. (Outlier
+      Option) -5 PTs'
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1170829749}
+          m_MethodName: PlayerHit
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 20
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1122597873
 GameObject:
   m_ObjectHideFlags: 0
@@ -11158,6 +11199,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6988836270015323611}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1170829749 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6988836271135681647, guid: 372ce4cb4fbbae2498d9b54fad52db55,
+    type: 3}
+  m_PrefabInstance: {fileID: 6988836270015323611}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170829747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55df2ed940ea28b48ace09165e48a78e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1170829751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6988836271135681645, guid: 372ce4cb4fbbae2498d9b54fad52db55,
@@ -12183,8 +12236,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -602, y: 472.08054}
-  m_SizeDelta: {x: 676.0183, y: 89.95404}
+  m_AnchoredPosition: {x: -550, y: 480}
+  m_SizeDelta: {x: 800, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1630579200
 MonoBehaviour:
@@ -12230,9 +12283,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 8
-  m_WholeNumbers: 1
-  m_Value: 8
+  m_MaxValue: 100
+  m_WholeNumbers: 0
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12307,8 +12360,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.5, y: 0}
+  m_SizeDelta: {x: -27, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1660727120
 GameObject:
@@ -12344,8 +12397,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 350}
-  m_SizeDelta: {x: 1920, y: 150}
+  m_AnchoredPosition: {x: 960, y: -250}
+  m_SizeDelta: {x: 960, y: 200}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &1702891230
 GameObject:
@@ -13078,7 +13131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1910538821
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13098,8 +13151,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 300}
+  m_AnchoredPosition: {x: -479.99997, y: -0}
+  m_SizeDelta: {x: 960, y: 600}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &1959984475
 GameObject:
@@ -13469,7 +13522,7 @@ MonoBehaviour:
   m_fontSize: 60
   m_fontSizeBase: 60
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -15597,12 +15650,12 @@ PrefabInstance:
     - target: {fileID: 6988836271135681647, guid: 372ce4cb4fbbae2498d9b54fad52db55,
         type: 3}
       propertyPath: maxHealth
-      value: 8
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6988836271135681647, guid: 372ce4cb4fbbae2498d9b54fad52db55,
         type: 3}
       propertyPath: currentHealth
-      value: 2
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6988836271135681647, guid: 372ce4cb4fbbae2498d9b54fad52db55,
         type: 3}
