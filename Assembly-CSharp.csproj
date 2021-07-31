@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\DialogSystem\DialogActivator.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogObject.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogResponseEvents.cs" />
+    <Compile Include="Assets\Scripts\DialogSystem\DialogResponseEvents1.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\DialogUI.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\IInteractable.cs" />
     <Compile Include="Assets\Scripts\DialogSystem\Response.cs" />
