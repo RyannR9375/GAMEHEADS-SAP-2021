@@ -308,7 +308,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 8d05ad301e306a84ea61064706a05cb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9620115, g: 1, b: 0.3843137, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -330,7 +330,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1828842274}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &30627870
 MonoBehaviour:
@@ -433,7 +433,6 @@ Transform:
   - {fileID: 1742346150}
   - {fileID: 1975248952}
   - {fileID: 455714599}
-  - {fileID: 1945186727}
   - {fileID: 1122597875}
   - {fileID: 1964231157}
   m_Father: {fileID: 1657380914}
@@ -475,7 +474,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 145
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -513,7 +512,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.264
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -566,12 +565,12 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b92d404c016985a43a32451b82ce9f4f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.2
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 183
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1268,8 +1267,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455714598}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.37, y: -1, z: 275.167}
-  m_LocalScale: {x: 1.1467685, y: 1.0388199, z: 1}
+  m_LocalPosition: {x: -0.735, y: -1, z: 275.167}
+  m_LocalScale: {x: 1.756579, y: 1.7863313, z: 1}
   m_Children: []
   m_Father: {fileID: 44290550}
   m_RootOrder: 2
@@ -1325,7 +1324,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1373,7 +1372,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 8d05ad301e306a84ea61064706a05cb7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e3dfc7918d863434886fdb539a82682f, type: 3}
   m_Color: {r: 1, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1529,6 +1528,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1554,9 +1554,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1e8ff88e1018c95458fc39cdd0ca6a2b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4be0cdee1869da840827cd5aaed26994, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.071
+  m_Volume: 0.401
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1697,6 +1697,15 @@ Transform:
   m_Father: {fileID: 1170829751}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!170 &519420033
+AudioDistortionFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_DistortionLevel: 0.65
 --- !u!1 &571751621
 GameObject:
   m_ObjectHideFlags: 0
@@ -12998,7 +13007,7 @@ Transform:
   m_LocalScale: {x: 6.5, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 44290550}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1122597876
 BoxCollider2D:
@@ -15127,7 +15136,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -15175,8 +15184,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 8d05ad301e306a84ea61064706a05cb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e3dfc7918d863434886fdb539a82682f, type: 3}
+  m_Color: {r: 0.92080235, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -15194,8 +15203,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742346147}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.21, y: 1.12, z: 275.167}
-  m_LocalScale: {x: 1.1467685, y: 1.0388199, z: 1}
+  m_LocalPosition: {x: -3.563, y: 0.768, z: 275.167}
+  m_LocalScale: {x: 1.6975658, y: 1.5896177, z: 1}
   m_Children: []
   m_Father: {fileID: 44290550}
   m_RootOrder: 0
@@ -15828,6 +15837,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1050051389}
+  - {fileID: 1945186727}
   - {fileID: 30627869}
   m_Father: {fileID: 1657380914}
   m_RootOrder: 0
@@ -16126,11 +16136,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1945186727}
   - component: {fileID: 1945186731}
-  - component: {fileID: 1945186730}
   - component: {fileID: 1945186729}
   - component: {fileID: 1945186728}
+  - component: {fileID: 1945186733}
+  - component: {fileID: 1945186732}
+  - component: {fileID: 1945186730}
   m_Layer: 0
-  m_Name: Stranger (3)
+  m_Name: Couch NPC
   m_TagString: Dialog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16144,11 +16156,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945186726}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.16, y: -2.13, z: 275.167}
-  m_LocalScale: {x: 1.1467685, y: 1.0388199, z: 1}
+  m_LocalPosition: {x: 1.0969999, y: -2.105, z: 275.167}
+  m_LocalScale: {x: 1.677894, y: 1.6683024, z: 1}
   m_Children: []
-  m_Father: {fileID: 44290550}
-  m_RootOrder: 3
+  m_Father: {fileID: 1828842274}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1945186728
 MonoBehaviour:
@@ -16162,7 +16174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc18486a9f8de042bb5d4d38c6c5dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogObject: {fileID: 11400000, guid: 857578ab0a0c1f840833545dd14018ec, type: 2}
+  dialogObject: {fileID: 11400000, guid: 9672f35ca701ec1469c4d6b43ee9f9f4, type: 2}
 --- !u!50 &1945186729
 Rigidbody2D:
   serializedVersion: 4
@@ -16184,8 +16196,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &1945186730
-BoxCollider2D:
+--- !u!58 &1945186730
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16197,19 +16209,9 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000044703484, y: 0.12121773}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.881667, y: 0.75756454}
-  m_EdgeRadius: 0
+  m_Radius: 2
 --- !u!212 &1945186731
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16249,8 +16251,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 8d05ad301e306a84ea61064706a05cb7, type: 3}
-  m_Color: {r: 1, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e3dfc7918d863434886fdb539a82682f, type: 3}
+  m_Color: {r: 1, g: 1, b: 0.9647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -16260,6 +16262,130 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1945186732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945186726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f46bb5e091d8449b35cbd1f51407e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogObject: {fileID: 11400000, guid: fe494fc4b83ec0c46b8d21f6d506ec7d, type: 2}
+  events:
+  - name: A) Okay my bad, but I need to check your couch real quick.
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1170829749}
+          m_MethodName: PlayerHit
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 20
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 58669604}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: B) I didn't come here to talk about tv sitcoms, what I actually came here
+      for is...
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 58669604}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 20
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1945186733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945186726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20f46bb5e091d8449b35cbd1f51407e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogObject: {fileID: 11400000, guid: 9672f35ca701ec1469c4d6b43ee9f9f4, type: 2}
+  events:
+  - name: 'A) Yeah I did - 5Pts '
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6988836271135681647, guid: 372ce4cb4fbbae2498d9b54fad52db55,
+            type: 3}
+          m_MethodName: PlayerHit
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 20
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 58669604}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: B) Pffttt of course not tf - 5Pts
+    onPickedResponse:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6988836271135681647, guid: 372ce4cb4fbbae2498d9b54fad52db55,
+            type: 3}
+          m_MethodName: PlayerHit
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 20
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 58669604}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1959984475
 GameObject:
   m_ObjectHideFlags: 0
@@ -16508,7 +16634,7 @@ Transform:
   m_LocalScale: {x: 6.5, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 44290550}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1975248951
 GameObject:
@@ -16538,8 +16664,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975248951}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8, y: 0.07, z: 275.167}
-  m_LocalScale: {x: 1.1467685, y: 1.0388199, z: 1}
+  m_LocalPosition: {x: -2.223, y: -0.187, z: 275.167}
+  m_LocalScale: {x: 1.8075291, y: 1.7554357, z: 1}
   m_Children: []
   m_Father: {fileID: 44290550}
   m_RootOrder: 1
@@ -16595,7 +16721,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -16643,7 +16769,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 8d05ad301e306a84ea61064706a05cb7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e3dfc7918d863434886fdb539a82682f, type: 3}
   m_Color: {r: 1, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
