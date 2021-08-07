@@ -6,20 +6,27 @@ ScriptsOnlyBuild:
     - DialogActivator
     - DialogObject
     - DialogResponseEvents
+    - DialogResponseEvents1
     - DialogUI
     - GameManager
     - HealthBar
+    - MainMenu1
     - Patrol
     - PlayerMovement
     - ResponseHandler
-    - Stranger
     - TypeWriterEffect
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
+    Unity.2D.SpriteShape.Editor.dll:
+    - UnityEditor.U2D.SpriteShapeEditorAnalytics
     Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridPaintPaletteClipboard
+    - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
+    - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -44,7 +51,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/DEMO.unity:
+    Assets/Scenes/GAME.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -56,8 +63,6 @@ ScriptsOnlyBuild:
     - Class: 28
       Script: {instanceID: 0}
     - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
@@ -73,6 +78,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 616}
     - Class: 114
@@ -86,47 +93,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12098}
     - Class: 114
-      Script: {instanceID: 12306}
+      Script: {instanceID: 12190}
     - Class: 114
-      Script: {instanceID: 12358}
+      Script: {instanceID: 12308}
     - Class: 114
-      Script: {instanceID: 12484}
+      Script: {instanceID: 12486}
     - Class: 114
-      Script: {instanceID: 12616}
+      Script: {instanceID: 12618}
     - Class: 114
-      Script: {instanceID: 12702}
+      Script: {instanceID: 12704}
     - Class: 114
-      Script: {instanceID: 12850}
+      Script: {instanceID: 12852}
     - Class: 114
-      Script: {instanceID: 12942}
+      Script: {instanceID: 12944}
     - Class: 114
-      Script: {instanceID: 13164}
+      Script: {instanceID: 13166}
     - Class: 114
-      Script: {instanceID: 13282}
+      Script: {instanceID: 13284}
     - Class: 114
-      Script: {instanceID: 13324}
+      Script: {instanceID: 13326}
     - Class: 114
-      Script: {instanceID: 13372}
+      Script: {instanceID: 13374}
     - Class: 114
-      Script: {instanceID: 13390}
+      Script: {instanceID: 13648}
     - Class: 114
-      Script: {instanceID: 13646}
+      Script: {instanceID: 13690}
     - Class: 114
-      Script: {instanceID: 13688}
+      Script: {instanceID: 13792}
     - Class: 114
-      Script: {instanceID: 13790}
+      Script: {instanceID: 14240}
     - Class: 114
-      Script: {instanceID: 14068}
+      Script: {instanceID: 14408}
     - Class: 114
-      Script: {instanceID: 14184}
+      Script: {instanceID: 14450}
     - Class: 114
-      Script: {instanceID: 14238}
-    - Class: 114
-      Script: {instanceID: 14406}
-    - Class: 114
-      Script: {instanceID: 14448}
-    - Class: 114
-      Script: {instanceID: 14468}
+      Script: {instanceID: 14470}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -150,6 +151,65 @@ ScriptsOnlyBuild:
     - Class: 483693784
       Script: {instanceID: 0}
     - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/TitleScreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11268}
+    - Class: 114
+      Script: {instanceID: 11292}
+    - Class: 114
+      Script: {instanceID: 11634}
+    - Class: 114
+      Script: {instanceID: 12308}
+    - Class: 114
+      Script: {instanceID: 12360}
+    - Class: 114
+      Script: {instanceID: 13374}
+    - Class: 114
+      Script: {instanceID: 13392}
+    - Class: 114
+      Script: {instanceID: 13690}
+    - Class: 114
+      Script: {instanceID: 13792}
+    - Class: 114
+      Script: {instanceID: 14070}
+    - Class: 114
+      Script: {instanceID: 14408}
+    - Class: 114
+      Script: {instanceID: 23126}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -362,6 +422,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 08e36549c829acfa07483ac328b0f5ca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DialogResponseEvents1
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -710,8 +776,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: db00aaddd71d189af40dd3a93f9854ba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu1
   platform: 5
   scenePathNames:
-  - Assets/Scenes/DEMO.unity
-  playerPath: C:/Users/yerho/Documents/GAMEHEADS SAP/BUILDS/WEEK 7_28/GAMEHEADS SAP
+  - Assets/Scenes/TitleScreen.unity
+  - Assets/Scenes/GAME.unity
+  playerPath: C:/Users/yerho/Documents/GAMEHEADS SAP/BUILDS/WEEK 8_7/GAMEHEADS SAP
     DEMO BUILD.exe

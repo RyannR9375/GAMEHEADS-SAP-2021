@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\DialogSystem\TypeWriterEffect.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\MainMenu1.cs" />
     <Compile Include="Assets\Scripts\Patrol.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Stranger.cs" />
