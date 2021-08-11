@@ -3,6 +3,8 @@
 public class DialogActivator : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogObject dialogObject;
+    
+    public GameObject EButton;
 
     public void UpdateDialogObject(DialogObject dialogObject)
     {
@@ -14,6 +16,12 @@ public class DialogActivator : MonoBehaviour, IInteractable
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerMovement player)) //checks for player tag and component
         {
             player.Interactable = this;
+            EButton.SetActive(true);
+
+            if(Input.GetKeyDown("E"))
+            {
+                EButton.SetActive(false);
+            }
         } 
     }
 
@@ -26,6 +34,8 @@ public class DialogActivator : MonoBehaviour, IInteractable
                 player.Interactable = null; // in the case that there r multiple activated, it makes sure that its null if its sure that its the current interactable
             }
         }
+
+        EButton.SetActive(false);
     }
 
     public void Interact(PlayerMovement player)

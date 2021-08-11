@@ -18,7 +18,7 @@ MonoBehaviour:
   - 'Laquan: Is that That''s So Damon???'
   - 'Bird 1: Bruh did you just say That''s So Damon?'
   responses:
-  - responseText: 'A) Yeah I did - 5Pts '
+  - responseText: A) Yeah I did
     dialogObject: {fileID: 11400000, guid: 618bf53ed2b409440a1e6eb69f94d98e, type: 2}
-  - responseText: B) Pffttt of course not tf - 5Pts
+  - responseText: 'B) Pffttt of course not tf '
     dialogObject: {fileID: 11400000, guid: 765970b2a5470314e848eff80e9efd12, type: 2}

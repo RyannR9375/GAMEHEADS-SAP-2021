@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
   - 'Bird 2: Bruh you definitely high. Only a mad man would confuse Jose in the House
-    with fucking That''s So Damon. -5 Pts'
+    with fucking That''s So Damon.'
+  - You feel drained at how irritated this Jose-Stan is making you.
   responses:
   - responseText: A) Okay my bad, but I need to check your couch real quick.
     dialogObject: {fileID: 11400000, guid: fe494fc4b83ec0c46b8d21f6d506ec7d, type: 2}

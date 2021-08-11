@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 2Response1B
   m_EditorClassIdentifier: 
   dialog:
+  - You feel drained for getting cut off.
   - 'Bird 3: No you don''t get the right to come here and insult Joseman and then
     ask for favors.'
   - 'Bird 1: You''re a sinner! No, a heretic beyond belief!'
@@ -23,7 +24,7 @@ MonoBehaviour:
     question.'
   - '*Who started the Gameheads League?*'
   responses:
-  - responseText: 'A) Laquan: Damon Packman -5 Pts'
+  - responseText: 'A) Laquan: Damon Packman '
     dialogObject: {fileID: 11400000, guid: 0beebc3b9b9bc474baab9e558d4830cb, type: 2}
-  - responseText: 'B) Laquan: Berto Ramero -5 Pts'
+  - responseText: 'B) Laquan: Berto Ramero '
     dialogObject: {fileID: 11400000, guid: 30c20cf4b69c4304fa1a894be3687481, type: 2}

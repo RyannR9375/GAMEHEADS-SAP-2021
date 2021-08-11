@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - Collectable
     - CrowdEnemy
     - DialogActivator
+    - DialogActivatorHint
     - DialogObject
     - DialogResponseEvents
     - DialogResponseEvents1
@@ -17,16 +18,10 @@ ScriptsOnlyBuild:
     - TypeWriterEffect
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
-    Unity.2D.SpriteShape.Editor.dll:
-    - UnityEditor.U2D.SpriteShapeEditorAnalytics
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridPaintPaletteClipboard
-    - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
-    - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -70,15 +65,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
-    - Class: 104
+    - Class: 91
       Script: {instanceID: 0}
-    - Class: 111
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 616}
@@ -89,45 +88,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 12038}
+      Script: {instanceID: 12040}
     - Class: 114
-      Script: {instanceID: 12098}
+      Script: {instanceID: 12100}
     - Class: 114
-      Script: {instanceID: 12190}
+      Script: {instanceID: 12192}
     - Class: 114
-      Script: {instanceID: 12308}
+      Script: {instanceID: 12310}
     - Class: 114
-      Script: {instanceID: 12486}
+      Script: {instanceID: 12488}
     - Class: 114
-      Script: {instanceID: 12618}
+      Script: {instanceID: 12502}
     - Class: 114
-      Script: {instanceID: 12704}
+      Script: {instanceID: 12622}
     - Class: 114
-      Script: {instanceID: 12852}
+      Script: {instanceID: 12708}
     - Class: 114
-      Script: {instanceID: 12944}
+      Script: {instanceID: 12856}
     - Class: 114
-      Script: {instanceID: 13166}
+      Script: {instanceID: 12948}
     - Class: 114
-      Script: {instanceID: 13284}
+      Script: {instanceID: 13170}
     - Class: 114
-      Script: {instanceID: 13326}
+      Script: {instanceID: 13288}
     - Class: 114
-      Script: {instanceID: 13374}
+      Script: {instanceID: 13330}
     - Class: 114
-      Script: {instanceID: 13648}
+      Script: {instanceID: 13378}
     - Class: 114
-      Script: {instanceID: 13690}
+      Script: {instanceID: 13652}
     - Class: 114
-      Script: {instanceID: 13792}
+      Script: {instanceID: 13694}
     - Class: 114
-      Script: {instanceID: 14240}
+      Script: {instanceID: 13796}
     - Class: 114
-      Script: {instanceID: 14408}
+      Script: {instanceID: 14244}
     - Class: 114
-      Script: {instanceID: 14450}
+      Script: {instanceID: 14412}
     - Class: 114
-      Script: {instanceID: 14470}
+      Script: {instanceID: 14454}
+    - Class: 114
+      Script: {instanceID: 14474}
+    - Class: 114
+      Script: {instanceID: 16460}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -178,23 +181,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11634}
     - Class: 114
-      Script: {instanceID: 12308}
+      Script: {instanceID: 12310}
     - Class: 114
-      Script: {instanceID: 12360}
+      Script: {instanceID: 12362}
     - Class: 114
-      Script: {instanceID: 13374}
+      Script: {instanceID: 12502}
     - Class: 114
-      Script: {instanceID: 13392}
+      Script: {instanceID: 13378}
     - Class: 114
-      Script: {instanceID: 13690}
+      Script: {instanceID: 13396}
     - Class: 114
-      Script: {instanceID: 13792}
+      Script: {instanceID: 13652}
     - Class: 114
-      Script: {instanceID: 14070}
+      Script: {instanceID: 13694}
     - Class: 114
-      Script: {instanceID: 14408}
+      Script: {instanceID: 13796}
     - Class: 114
-      Script: {instanceID: 23126}
+      Script: {instanceID: 14074}
+    - Class: 114
+      Script: {instanceID: 14412}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -478,7 +483,13 @@ ScriptsOnlyBuild:
     className: DialogResponseEvents
   - hash:
       serializedVersion: 2
-      Hash: 67fde0fed6e179e21b7630625e8b569a
+      Hash: db00aaddd71d189af40dd3a93f9854ba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenu1
+  - hash:
+      serializedVersion: 2
+      Hash: 3dbfa6ee0d808f4a694c4da0e54f3332
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DialogActivator
@@ -550,7 +561,7 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 7778dc33f22cb4f541cbbf57ef4f57aa
+      Hash: ec09004e8d05f1278036ecc8ed6e2366
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -622,7 +633,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: a73813045b119f409d6be08943841009
+      Hash: f29de264b0fe289ab47b7307bb306d3c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -778,13 +789,19 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: db00aaddd71d189af40dd3a93f9854ba
+      Hash: a9cec5743ae0885b5f1073d528a7e589
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: MainMenu1
+    className: HintSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 6fae1b618ac516faae1ef6e960bf3522
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DialogActivatorHint
   platform: 5
   scenePathNames:
   - Assets/Scenes/TitleScreen.unity
   - Assets/Scenes/GAME.unity
-  playerPath: C:/Users/yerho/Documents/GAMEHEADS SAP/BUILDS/WEEK 8_7/GAMEHEADS SAP
+  playerPath: C:/Users/yerho/Documents/GAMEHEADS SAP/BUILDS/WEEK 8_10/GAMEHEADS SAP
     DEMO BUILD.exe
